@@ -225,9 +225,13 @@ $('#checkoutForm').addEventListener('submit', event => {
   if (!event.currentTarget.reportValidity()) return;
 
   const message = buildWhatsAppMessage();
+  if (config.checkoutMode === 'disabled') {
+    alert('WhatsApp ainda não configurado nesta versão pública.');
+    return;
+  }
   const checkoutNumber = config.checkoutMode === 'production' ? config.whatsappProduction : config.whatsappTest;
   if (!checkoutNumber) {
-    alert('Número de WhatsApp de produção ainda não foi configurado.');
+    alert('Número de WhatsApp ainda não foi configurado.');
     return;
   }
   const url = `https://wa.me/${checkoutNumber}?text=${encodeURIComponent(message)}`;
