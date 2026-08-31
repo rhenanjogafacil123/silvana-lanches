@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#9f2426" />
+  <meta name="description" content="Cardápio digital da Silvana Lanches em Campo Grande, Rio de Janeiro. Monte seu pedido e finalize pelo WhatsApp." />
+  <title>Silvana Lanches | Cardápio Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="topbar container">
+      <a class="brand" href="#inicio" aria-label="Silvana Lanches - início">
+        <span class="brand-badge" aria-hidden="true">🍔</span>
+        <span>
+          <strong>Silvana</strong>
+          <small>Lanches</small>
+        </span>
+      </a>
+      <button class="cart-trigger" id="openCartTop" type="button" aria-label="Abrir carrinho">
+        <span>🛒 Carrinho</span>
+        <b id="cartCountTop">0</b>
+      </button>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="hero-copy">
+        <span class="eyebrow">🍟 Hambúrgueres, combos e porções</span>
+        <h1>Seu lanche favorito, <em>sem complicação.</em></h1>
+        <p>Escolha seus itens, monte o pedido e envie tudo organizado direto para o WhatsApp da Silvana Lanches.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#cardapio">Ver cardápio</a>
+          <a class="btn btn-ghost" href="#informacoes">Informações</a>
+        </div>
+        <div class="quick-info">
+          <span>🕡 Horário a confirmar</span>
+          <span>📍 Campo Grande - RJ</span>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Destaque de pedido">
+        <div class="hero-card-top">
+          <span>🔥 Destaque</span>
+          <span>Combo Grande</span>
+        </div>
+        <div class="hero-food" aria-hidden="true">🍔🍟🥤</div>
+        <div class="hero-card-bottom">
+          <div>
+            <small>3 X-Tudos ou cachorros-quentes + acompanhamento + bebida</small>
+            <strong>R$ 75,00</strong>
+          </div>
+          <button type="button" class="mini-add" data-add="combo-grande">Adicionar +</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="benefits container" aria-label="Vantagens">
+      <article><span>⚡</span><div><strong>Pedido rápido</strong><small>Sem cadastro</small></div></article>
+      <article><span>💬</span><div><strong>Direto no WhatsApp</strong><small>Mensagem organizada</small></div></article>
+      <article><span>📍</span><div><strong>Campo Grande</strong><small>Estr. dos Caboclos</small></div></article>
+    </section>
+
+    <section class="menu-section" id="cardapio">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Cardápio</span>
+            <h2>Escolha o que vai pedir hoje 😋</h2>
+          </div>
+          <label class="search-box">
+            <span>🔎</span>
+            <input id="searchInput" type="search" placeholder="Buscar no cardápio" autocomplete="off" />
+          </label>
+        </div>
+
+        <div class="category-tabs" id="categoryTabs" aria-label="Categorias"></div>
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <section class="info-section" id="informacoes">
+      <div class="container info-grid">
+        <article class="info-card primary-info">
+          <span class="eyebrow light">Silvana Lanches</span>
+          <h2>Do nosso balcão para a sua fome. 🍔</h2>
+          <p>Cardápio digital pensado para deixar seu pedido simples: escolha os itens, confira o carrinho e envie pelo WhatsApp.</p>
+          <a class="btn btn-light" href="#cardapio">Montar meu pedido</a>
+        </article>
+        <article class="info-card">
+          <div class="info-icon">📍</div>
+          <h3>Onde estamos</h3>
+          <p>Estr. dos Caboclos, 1115<br>Campo Grande, Rio de Janeiro - RJ<br>CEP 23017-000</p>
+        </article>
+        <article class="info-card">
+          <div class="info-icon">🕡</div>
+          <h3>Horário</h3>
+          <p>Atendimento indicado no material atual:</p>
+          <strong>A confirmar</strong>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="brand footer-brand">
+        <span class="brand-badge">🍔</span>
+        <span><strong>Silvana</strong><small>Lanches</small></span>
+      </div>
+      <p>Cardápio digital • Pedido finalizado pelo WhatsApp</p>
+    </div>
+  </footer>
+
+  <button class="floating-cart" id="openCartBottom" type="button" aria-label="Abrir carrinho">
+    <span class="floating-label">🛒 Ver carrinho</span>
+    <span class="floating-summary"><b id="cartCountBottom">0</b> itens • <strong id="cartTotalBottom">R$ 0,00</strong></span>
+  </button>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Carrinho">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">Seu pedido</span>
+        <h2>Carrinho</h2>
+      </div>
+      <button id="closeCart" class="icon-btn" type="button" aria-label="Fechar carrinho">✕</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="checkout-panel">
+      <div class="total-row"><span>Total</span><strong id="drawerTotal">R$ 0,00</strong></div>
+      <button id="startCheckout" class="btn btn-primary full" type="button">Continuar pedido</button>
+    </div>
+  </aside>
+
+  <dialog id="checkoutDialog" class="checkout-dialog">
+    <form id="checkoutForm" method="dialog">
+      <div class="dialog-header">
+        <div>
+          <span class="eyebrow">Última etapa</span>
+          <h2>Finalizar pedido</h2>
+        </div>
+        <button id="closeCheckout" type="button" class="icon-btn" aria-label="Fechar">✕</button>
+      </div>
+
+      <div class="form-grid">
+        <label class="field span-2">
+          <span>Seu nome *</span>
+          <input id="customerName" name="customerName" required placeholder="Ex.: Renan" />
+        </label>
+
+        <fieldset class="delivery-choice span-2">
+          <legend>Como quer receber? *</legend>
+          <label><input type="radio" name="fulfillment" value="Entrega" checked /> <span>🛵 Entrega</span></label>
+          <label><input type="radio" name="fulfillment" value="Retirada" /> <span>🥡 Retirada</span></label>
+        </fieldset>
+
+        <div id="addressFields" class="address-fields span-2">
+          <label class="field span-2"><span>Endereço *</span><input id="deliveryAddress" placeholder="Rua, número e bairro" /></label>
+          <label class="field span-2"><span>Complemento / referência *</span><input id="deliveryComplement" placeholder="Ex.: portão preto, casa dos fundos..." /></label>
+        </div>
+
+        <label class="field">
+          <span>Pagamento *</span>
+          <select id="paymentMethod" required>
+            <option value="Pix">Pix</option>
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="Cartão">Cartão</option>
+          </select>
+        </label>
+
+        <label class="field" id="changeField" hidden>
+          <span>Troco para</span>
+          <input id="changeFor" inputmode="decimal" placeholder="Ex.: 100,00" />
+        </label>
+
+        <label class="field span-2">
+          <span>Observações</span>
+          <textarea id="orderNotes" rows="3" placeholder="Ex.: retirar tomate, pouco molho..."></textarea>
+        </label>
+      </div>
+
+      <div class="dialog-total"><span>Total dos itens</span><strong id="checkoutTotal">R$ 0,00</strong></div>
+      <button class="btn btn-whatsapp full" type="submit">💬 Enviar pedido no WhatsApp</button>
+      <p class="form-note">O pedido só é enviado quando você confirmar a mensagem no WhatsApp.</p>
+    </form>
+  </dialog>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
