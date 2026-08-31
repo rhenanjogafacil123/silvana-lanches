@@ -1,0 +1,480 @@
+window.SILVANA_MENU = [
+  {
+    "id": "promo-batata-magnifica",
+    "category": "Promoção",
+    "name": "Batata Magnífica",
+    "price": 18.0,
+    "fromPrice": true,
+    "icon": "🍟",
+    "description": "Batata com cheddar cremoso derretido, bacon ou calabresa."
+  },
+  {
+    "id": "promo-guarana-1l",
+    "category": "Promoção",
+    "name": "Guaraná Antarctica 1L",
+    "price": 8.5,
+    "fromPrice": false,
+    "icon": "🥤",
+    "description": "Guaraná Antarctica 1L."
+  },
+  {
+    "id": "trio-carne",
+    "category": "Trio",
+    "name": "(Trio) Carne",
+    "price": 21.5,
+    "fromPrice": true,
+    "icon": "🍔🍟🥤",
+    "description": "Trio com lanche de carne, acompanhamento e bebida."
+  },
+  {
+    "id": "trio-frango",
+    "category": "Trio",
+    "name": "(Trio) Frango",
+    "price": 23.5,
+    "fromPrice": true,
+    "icon": "🍗🍟🥤",
+    "description": "Trio com lanche de frango, acompanhamento e bebida."
+  },
+  {
+    "id": "trio-picanha",
+    "category": "Trio",
+    "name": "(Trio) Picanha",
+    "price": 25.5,
+    "fromPrice": true,
+    "icon": "🥩🍟🥤",
+    "description": "Trio com lanche de picanha, acompanhamento e bebida."
+  },
+  {
+    "id": "trio-cachorro-quente",
+    "category": "Trio",
+    "name": "(Trio) Cachorro-Quente",
+    "price": 27.5,
+    "fromPrice": true,
+    "icon": "🌭🍟🥤",
+    "description": "Trio com cachorro-quente, acompanhamento e bebida."
+  },
+  {
+    "id": "combo-medio",
+    "category": "Combos",
+    "name": "Combo Médio",
+    "price": 51.0,
+    "fromPrice": false,
+    "icon": "🍔🍟🥤",
+    "description": "2 X-Tudos ou Cachorros-Quentes + Batata M ou Anéis de Cebola M ou Nuggets M + Guaraná Antarctica 1L."
+  },
+  {
+    "id": "combo-grande",
+    "category": "Combos",
+    "name": "Combo Grande",
+    "price": 75.0,
+    "fromPrice": false,
+    "icon": "🔥🍔",
+    "description": "3 X-Tudos ou Cachorros-Quentes + Batata G ou Anéis de Cebola G ou Nuggets G + Guaraná Antarctica 1,5L."
+  },
+  {
+    "id": "x-montanha",
+    "category": "Hambúrgueres",
+    "name": "X-Montanha",
+    "price": 29.0,
+    "fromPrice": true,
+    "icon": "⛰️🍔",
+    "description": "Pão, 3 carnes, 3 ovos, 3 queijos+, 3 presuntos, bacon, calabresa, cheddar cremoso ou catupiry, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-podrao",
+    "category": "Hambúrgueres",
+    "name": "X-Podrão",
+    "price": 26.0,
+    "fromPrice": true,
+    "icon": "🤤🍔",
+    "description": "Pão, 2 carnes, 2 ovos, 2 queijos cheddar (fatia), 2 presuntos, bacon, calabresa, cheddar cremoso ou catupiry, milho, ervilha, ketchup, maionese, mostarda, rosé, queijo ralado, alface e batata palha."
+  },
+  {
+    "id": "chicken-junior",
+    "category": "Hambúrgueres",
+    "name": "Chicken Junior",
+    "price": 15.5,
+    "fromPrice": false,
+    "icon": "🍗🍔",
+    "description": "Pão, frango empanado, maionese, tomate e alface."
+  },
+  {
+    "id": "duo-chicken",
+    "category": "Hambúrgueres",
+    "name": "Duo Chicken",
+    "price": 24.0,
+    "fromPrice": false,
+    "icon": "🍗🍗",
+    "description": "Pão, 2 frangos empanados, 2 queijos cheddar, bacon, cebola crispy, alface, tomate e maionese."
+  },
+  {
+    "id": "x-supremo",
+    "category": "Hambúrgueres",
+    "name": "X-Supremo",
+    "price": 25.5,
+    "fromPrice": true,
+    "icon": "👑🍔",
+    "description": "Pão, 2 carnes, 4 queijos, bacon+, calabresa+, cheddar cremoso ou catupiry, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "cheddarnifico",
+    "category": "Hambúrgueres",
+    "name": "Cheddarnífico",
+    "price": 24.5,
+    "fromPrice": true,
+    "icon": "🧀🍔",
+    "description": "Pão, 4 carnes, 4 queijos cheddar, bacon, ketchup, maionese, mostarda, molho rosé, alface e batata palha."
+  },
+  {
+    "id": "x-cheddar-bacon",
+    "category": "Hambúrgueres",
+    "name": "X-Cheddar (Bacon)",
+    "price": 16.5,
+    "fromPrice": true,
+    "icon": "🥓🧀",
+    "description": "Pão, carne, cheddar cremoso, bacon+, cebola crispy, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-cheddar-calabresa",
+    "category": "Hambúrgueres",
+    "name": "X-Cheddar (Calabresa)",
+    "price": 16.5,
+    "fromPrice": true,
+    "icon": "🌭🧀",
+    "description": "Pão, carne, cheddar cremoso, calabresa+, cebola crispy, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-gran-cheddar-bacon",
+    "category": "Hambúrgueres",
+    "name": "X-Gran Cheddar (Bacon)",
+    "price": 22.5,
+    "fromPrice": true,
+    "icon": "🥓🍔",
+    "description": "Pão, 2 carnes, 2x cheddar cremoso, bacon+, cebola crispy, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-gran-cheddar-calabresa",
+    "category": "Hambúrgueres",
+    "name": "X-Gran Cheddar (Calabresa)",
+    "price": 22.5,
+    "fromPrice": true,
+    "icon": "🌭🍔",
+    "description": "Pão, 2 carnes, 2x cheddar cremoso e calabresa."
+  },
+  {
+    "id": "x-explosao",
+    "category": "Hambúrgueres",
+    "name": "X-Explosão",
+    "price": 23.5,
+    "fromPrice": true,
+    "icon": "💥🍔",
+    "description": "Pão, 2 carnes, 1 queijo empanado, 2 queijos cheddar, bacon, ketchup, maionese rosé, alface e batata palha."
+  },
+  {
+    "id": "hamburguer",
+    "category": "Hambúrgueres",
+    "name": "Hambúrguer",
+    "price": 8.5,
+    "fromPrice": true,
+    "icon": "🍔",
+    "description": "Pão, carne, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-burguer",
+    "category": "Hambúrgueres",
+    "name": "X-Burguer",
+    "price": 10.5,
+    "fromPrice": true,
+    "icon": "🧀🍔",
+    "description": "Pão, carne, queijo, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "big-x-burguer",
+    "category": "Hambúrgueres",
+    "name": "Big X-Burguer",
+    "price": 13.5,
+    "fromPrice": true,
+    "icon": "🍔🍔",
+    "description": "Pão, 2 carnes, 4 queijos, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-egg",
+    "category": "Hambúrgueres",
+    "name": "X-Egg",
+    "price": 13.0,
+    "fromPrice": true,
+    "icon": "🍳🍔",
+    "description": "Pão, carne, ovo, 3 queijos, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-tudo",
+    "category": "Hambúrgueres",
+    "name": "X-Tudo",
+    "price": 14.5,
+    "fromPrice": true,
+    "icon": "🤩🍔",
+    "description": "Pão, carne, ovo, queijo, presunto, bacon, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-bacon",
+    "category": "Hambúrgueres",
+    "name": "X-Bacon",
+    "price": 15.5,
+    "fromPrice": true,
+    "icon": "🥓🍔",
+    "description": "Pão, carne, 2 queijos, bacon+, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-calabresa",
+    "category": "Hambúrgueres",
+    "name": "X-Calabresa",
+    "price": 15.5,
+    "fromPrice": true,
+    "icon": "🌭🍔",
+    "description": "Pão, carne, 2 queijos, calabresa+, cebola, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-davi",
+    "category": "Hambúrgueres",
+    "name": "X-Davi",
+    "price": 17.5,
+    "fromPrice": true,
+    "icon": "🍔",
+    "description": "Pão, 2 carnes, ovo, 2 queijos, presunto, bacon, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "x-duplo",
+    "category": "Hambúrgueres",
+    "name": "X-Duplo",
+    "price": 19.5,
+    "fromPrice": true,
+    "icon": "🍔🍔",
+    "description": "Pão, 2 carnes, 2 ovos, 2 queijos, 2 presuntos, bacon+, ketchup, maionese, mostarda, rosé, alface e batata palha."
+  },
+  {
+    "id": "cachorro-quente",
+    "category": "Cachorros-Quentes",
+    "name": "Cachorro-Quente",
+    "price": 18.5,
+    "fromPrice": true,
+    "icon": "🌭",
+    "description": "Pão, salsicha ou linguiça, tomate, cebola, pimentão, milho, ervilha, ketchup, maionese, mostarda, rosé, queijo ralado, alface, batata palha, passas, ovo de codorna e azeitona."
+  },
+  {
+    "id": "hot",
+    "category": "Cachorros-Quentes",
+    "name": "Hot",
+    "price": 20.5,
+    "fromPrice": true,
+    "icon": "🌭🔥",
+    "description": "Pão, salsicha ou linguiça, calabresa, bacon, cheddar cremoso ou catupiry, tomate, cebola, pimentão, milho, ervilha, ketchup, maionese, mostarda, rosé, queijo ralado, alface e batata palha."
+  },
+  {
+    "id": "dogao",
+    "category": "Cachorros-Quentes",
+    "name": "Dogão",
+    "price": 25.5,
+    "fromPrice": true,
+    "icon": "🌭👑",
+    "description": "Pão, salsicha ou linguiça, carne de picanha, ovo frito, queijo prato, presunto, calabresa, cheddar cremoso ou catupiry, tomate, cebola, pimentão, milho, ervilha, ketchup, maionese e mostarda."
+  },
+  {
+    "id": "batata-frita",
+    "category": "Batata, Cebola & Nuggets",
+    "name": "Batata Frita",
+    "price": 11.5,
+    "fromPrice": true,
+    "icon": "🍟",
+    "description": "Complementos: ketchup, maionese, queijo muçarela, alho e orégano."
+  },
+  {
+    "id": "batata-magnifica",
+    "category": "Batata, Cebola & Nuggets",
+    "name": "Batata Magnífica",
+    "price": 18.0,
+    "fromPrice": true,
+    "icon": "🍟🧀",
+    "description": "Batata, cheddar cremoso derretido, bacon ou calabresa."
+  },
+  {
+    "id": "batata-king",
+    "category": "Batata, Cebola & Nuggets",
+    "name": "Batata King",
+    "price": 42.5,
+    "fromPrice": false,
+    "icon": "👑🍟",
+    "description": "Batata, bacon, calabresa, cheddar cremoso, catupiry, muçarela, orégano, alho torrado, ketchup e maionese."
+  },
+  {
+    "id": "aneis-cebola",
+    "category": "Batata, Cebola & Nuggets",
+    "name": "Anéis de Cebola",
+    "price": 13.5,
+    "fromPrice": true,
+    "icon": "🧅",
+    "description": "Anéis de cebola + 1 molho escolhido."
+  },
+  {
+    "id": "nuggets",
+    "category": "Batata, Cebola & Nuggets",
+    "name": "Nuggets",
+    "price": 15.5,
+    "fromPrice": true,
+    "icon": "🍗",
+    "description": "Nuggets + 1 molho escolhido."
+  },
+  {
+    "id": "trio-ternura",
+    "category": "Batata, Cebola & Nuggets",
+    "name": "Trio Ternura",
+    "price": 40.5,
+    "fromPrice": false,
+    "icon": "🍟🧅🍗",
+    "description": "Batata frita, 8 anéis de cebola, 8 nuggets e 2 molhos."
+  },
+  {
+    "id": "guaracamp",
+    "category": "Bebidas",
+    "name": "Guaracamp",
+    "price": 3.0,
+    "fromPrice": true,
+    "icon": "🥤",
+    "description": "Guaracamp."
+  },
+  {
+    "id": "refri-lata",
+    "category": "Bebidas",
+    "name": "Refri. Lata",
+    "price": 6.5,
+    "fromPrice": true,
+    "icon": "🥤",
+    "description": "Refrigerante em lata."
+  },
+  {
+    "id": "refri-600ml",
+    "category": "Bebidas",
+    "name": "Refri. 600ml",
+    "price": 8.5,
+    "fromPrice": true,
+    "icon": "🥤",
+    "description": "Refrigerante 600ml."
+  },
+  {
+    "id": "refri-2l",
+    "category": "Bebidas",
+    "name": "Refri. 2L",
+    "price": 13.5,
+    "fromPrice": true,
+    "icon": "🥤",
+    "description": "Refrigerante 2 litros."
+  },
+  {
+    "id": "guarana-antarctica-1l",
+    "category": "Bebidas",
+    "name": "Guaraná Antarctica 1L",
+    "price": 8.5,
+    "fromPrice": false,
+    "icon": "🥤",
+    "description": "Guaraná Antarctica 1L."
+  },
+  {
+    "id": "coca-zero-15l",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero 1,5L",
+    "price": 11.5,
+    "fromPrice": false,
+    "icon": "🥤",
+    "description": "Coca-Cola Zero 1,5L."
+  },
+  {
+    "id": "agua-tonica-lata",
+    "category": "Bebidas",
+    "name": "Água Tônica Lata",
+    "price": 6.5,
+    "fromPrice": false,
+    "icon": "🥤",
+    "description": "Água tônica em lata."
+  },
+  {
+    "id": "h2o-limoneto",
+    "category": "Bebidas",
+    "name": "H2O Limoneto",
+    "price": 6.5,
+    "fromPrice": false,
+    "icon": "🍋",
+    "description": "H2O Limoneto."
+  },
+  {
+    "id": "agua-com-gas",
+    "category": "Bebidas",
+    "name": "Água c/ Gás",
+    "price": 4.5,
+    "fromPrice": false,
+    "icon": "💧",
+    "description": "Água com gás."
+  },
+  {
+    "id": "agua-sem-gas",
+    "category": "Bebidas",
+    "name": "Água s/ Gás",
+    "price": 3.5,
+    "fromPrice": false,
+    "icon": "💧",
+    "description": "Água sem gás."
+  },
+  {
+    "id": "molho-billy-jack",
+    "category": "Molhos",
+    "name": "Potinho de Billy Jack",
+    "price": 2.0,
+    "fromPrice": false,
+    "icon": "🥫",
+    "description": "Potinho de molho Billy Jack."
+  },
+  {
+    "id": "molho-barbecue",
+    "category": "Molhos",
+    "name": "Potinho de Barbecue",
+    "price": 2.0,
+    "fromPrice": false,
+    "icon": "🥫",
+    "description": "Potinho de molho barbecue."
+  },
+  {
+    "id": "molho-tasty",
+    "category": "Molhos",
+    "name": "Potinho de Molho Tasty",
+    "price": 2.0,
+    "fromPrice": false,
+    "icon": "🥫",
+    "description": "Potinho de molho Tasty."
+  },
+  {
+    "id": "molho-baconese",
+    "category": "Molhos",
+    "name": "Potinho de Baconese",
+    "price": 2.0,
+    "fromPrice": false,
+    "icon": "🥓",
+    "description": "Potinho de baconese."
+  },
+  {
+    "id": "sache-maionese-verde",
+    "category": "Molhos",
+    "name": "Sachê de Maionese Verde",
+    "price": 2.0,
+    "fromPrice": false,
+    "icon": "🥫",
+    "description": "Sachê de maionese verde."
+  }
+];
+
+window.SILVANA_CONFIG = {
+  businessName: "Silvana Lanches",
+  address: "Estr. dos Caboclos, 1115 - Campo Grande, Rio de Janeiro - RJ, 23017-000",
+  hours: "A confirmar",
+  checkoutMode: "test",
+  whatsappTest: "5521973152056",
+  whatsappProduction: "",
+  menuSource: "pedir.delivery/app/silvanalanches/menu — catálogo extraído do vídeo enviado em 31/08/2026"
+};
