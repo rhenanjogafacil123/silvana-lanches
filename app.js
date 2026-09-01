@@ -34,11 +34,18 @@ function filteredMenu() {
   });
 }
 
+function renderProductVisual(item) {
+  if (item.id === 'trio-picanha') {
+    return '<img src="assets/trio-picanha-silvana.webp" alt="" style="width:100%;height:auto;display:block;">';
+  }
+  return `<span>${item.icon}</span>`;
+}
+
 function renderProducts() {
   const products = filteredMenu();
   productsGrid.innerHTML = products.length ? products.map(item => `
     <article class="product-card">
-      <div class="product-visual" aria-hidden="true"><span>${item.icon}</span></div>
+      <div class="product-visual" aria-hidden="true">${renderProductVisual(item)}</div>
       <div class="product-content">
         <div class="product-category">${item.category}</div>
         <h3>${item.name}</h3>
